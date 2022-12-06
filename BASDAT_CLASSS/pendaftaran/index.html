@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Form Biodata</title>
+  </head>
+  <body>
+    <form action="proses.php" method="POST" enctype="multipart/form-data">
+      <div>
+        <label>Nama</label><br />
+        <input name="nama" type="text" />
+      </div>
+      <div>
+        <label>Jurusan</label><br />
+        <input type="checkbox" name="jurusan[]" value="RPL" />RPL <input type="checkbox" name="jurusan[]" value="OTKP" />OTKP <input type="checkbox" name="jurusan[]" value="BDP" />BDP
+      </div>
+      <div>
+        <label>Nama Ayah</label><br />
+        <input name="ayah" type="text" />
+      </div>
+      <div>
+        <label>Nama Ibu</label><br />
+        <input name="ibu" type="text" />
+      </div>
+      <div>
+        <label>Alamat</label><br />
+        <input name="alamat" type="text" />
+      </div>
+      <br />
+      <div tyle="margin-top:10px">
+        <label>Foto</label>
+        <input type="file" name="foto" />
+      </div>
+      <div>
+        <input type="submit" value="Simpan" />
+      </div>
+    </form>
+  </body>
+</html>
